@@ -1,0 +1,68 @@
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+Processing by HelloPageController#hello as HTML
+  Rendering hello_page/hello.html.erb within layouts/application
+  Rendered hello_page/hello.html.erb within layouts/application (534.2ms)
+Completed 200 OK in 553ms (Views: 548.6ms | ActiveRecord: 0.0ms)
+  [1m[35m (0.1ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+Processing by HelloPageController#hello as HTML
+  Rendering hello_page/hello.html.erb within layouts/application
+  Rendered hello_page/hello.html.erb within layouts/application (0.6ms)
+Completed 200 OK in 4ms (Views: 3.2ms | ActiveRecord: 0.0ms)
+  [1m[35m (0.1ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+Processing by HelloPageController#hello as HTML
+  Rendering hello_page/hello.html.erb within layouts/application
+  Rendered hello_page/hello.html.erb within layouts/application (212.9ms)
+Completed 200 OK in 229ms (Views: 227.1ms | ActiveRecord: 0.0ms)
+  [1m[35m (0.1ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+Processing by HelloPageController#hello as HTML
+  Rendering hello_page/hello.html.erb within layouts/application
+  Rendered hello_page/hello.html.erb within layouts/application (0.7ms)
+Completed 200 OK in 3ms (Views: 3.0ms | ActiveRecord: 0.0ms)
+  [1m[35m (0.1ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+Processing by HelloPageController#hello as HTML
+  Rendering hello_page/hello.html.erb within layouts/application
+  Rendered hello_page/hello.html.erb within layouts/application (251.7ms)
+Completed 200 OK in 274ms (Views: 271.2ms | ActiveRecord: 0.0ms)
+  [1m[35m (0.1ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+Processing by HelloPageController#hello as HTML
+  Rendering hello_page/hello.html.erb within layouts/application
+  Rendered hello_page/hello.html.erb within layouts/application (0.5ms)
+Completed 200 OK in 3ms (Views: 2.2ms | ActiveRecord: 0.0ms)
+  [1m[35m (0.1ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.2ms)[0m  [1m[36mbegin transaction[0m
+Processing by HelloPageController#hello as HTML
+  Rendering hello_page/hello.html.erb within layouts/application
+  Rendered hello_page/hello.html.erb within layouts/application (292.6ms)
+Completed 200 OK in 304ms (Views: 302.3ms | ActiveRecord: 0.0ms)
+  [1m[35m (0.1ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+Processing by HelloPageController#hello as HTML
+  Rendering hello_page/hello.html.erb within layouts/application
+  Rendered hello_page/hello.html.erb within layouts/application (0.5ms)
+Completed 200 OK in 3ms (Views: 2.3ms | ActiveRecord: 0.0ms)
+  [1m[35m (0.1ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+Processing by HelloPageController#hello as HTML
+  Rendering hello_page/hello.html.erb within layouts/application
+  Rendered hello_page/hello.html.erb within layouts/application (2.2ms)
+Completed 200 OK in 374ms (Views: 370.3ms | ActiveRecord: 0.0ms)
+  [1m[35m (0.2ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+Processing by HelloPageController#hello as HTML
+  Rendering hello_page/hello.html.erb within layouts/application
+  Rendered hello_page/hello.html.erb within layouts/application (0.1ms)
+Completed 200 OK in 2ms (Views: 1.5ms | ActiveRecord: 0.0ms)
+  [1m[35m (0.1ms)[0m  [1m[31mrollback transaction[0m
