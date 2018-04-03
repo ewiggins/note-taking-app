@@ -11,6 +11,6 @@ RSpec.feature "Notes", :type => :feature do
 
   it "creates a new note" do
     click_on ("Create Note")
-    expect(page).to have_content("Note Created Sucessfully")
+    expect(page).to have_content("Note Created Sucessfully.")
   end
 end
