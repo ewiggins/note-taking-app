@@ -1,9 +1,18 @@
 class NotesController < ApplicationController
   def index
-    @notes = Note.all
+    @note = Note.all
   end
 
   def new
-    @notes = Note.new
+    @note = Note.new
+  end
+
+  def create
+    @note = Note.new(params[:note])
+    if @note.save
+      redirect_to @note
+    else
+      render "new"
+    end
   end
 end

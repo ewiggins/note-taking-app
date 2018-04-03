@@ -1,6 +1,6 @@
 require "rails_helper"
 
-describe NotesController do
+RSpec.describe NotesController do
   describe "#index" do
     subject { get :index }
     specify { should render_template(:index) }

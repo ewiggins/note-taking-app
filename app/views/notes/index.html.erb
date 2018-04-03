@@ -1,2 +1,10 @@
-<h1>Notes#index</h1>
-<p>Find me in app/views/notes/index.html.erb</p>
+<h1>A Penny For You Thoughts</h1>
+<h2>Write and all thoughts here</h2>
+
+
+<% @notes.each do |note| %>
+<%= note.title %>
+<%= note.body %>
+<%= link_to 'Edit', edit_note_path(note) %>
+<%= link_to 'Delete', note_path(note), method: :delete, data: { confirm: 'Are you sure?' } %>
+<% end %>

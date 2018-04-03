@@ -173,3 +173,738 @@ Migrating to CreateNotes (20180402212800)
   [1m[35mSQL (0.5ms)[0m  [1m[32mINSERT INTO "ar_internal_metadata" ("key", "value", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["key", "environment"], ["value", "development"], ["created_at", "2018-04-02 21:28:09.227347"], ["updated_at", "2018-04-02 21:28:09.227347"]]
   [1m[35m (0.9ms)[0m  [1m[36mcommit transaction[0m
   [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Started GET "/" for 127.0.0.1 at 2018-04-02 17:56:25 -0400
+  [1m[35m (0.6ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by HelloPageController#hello as HTML
+  Rendering hello_page/hello.html.erb within layouts/application
+  Rendered hello_page/hello.html.erb within layouts/application (1.5ms)
+Completed 200 OK in 648ms (Views: 633.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/new" for 127.0.0.1 at 2018-04-02 17:56:33 -0400
+  
+ActionController::RoutingError (No route matches [GET] "/new"):
+  
+actionpack (5.1.6) lib/action_dispatch/middleware/debug_exceptions.rb:63:in `call'
+web-console (3.5.1) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.5.1) lib/web_console/middleware.rb:28:in `block in call'
+web-console (3.5.1) lib/web_console/middleware.rb:18:in `catch'
+web-console (3.5.1) lib/web_console/middleware.rb:18:in `call'
+actionpack (5.1.6) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.1.6) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.1.6) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (5.1.6) lib/active_support/tagged_logging.rb:69:in `block in tagged'
+activesupport (5.1.6) lib/active_support/tagged_logging.rb:26:in `tagged'
+activesupport (5.1.6) lib/active_support/tagged_logging.rb:69:in `tagged'
+railties (5.1.6) lib/rails/rack/logger.rb:24:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.1.6) lib/action_dispatch/middleware/remote_ip.rb:79:in `call'
+actionpack (5.1.6) lib/action_dispatch/middleware/request_id.rb:25:in `call'
+rack (2.0.4) lib/rack/method_override.rb:22:in `call'
+rack (2.0.4) lib/rack/runtime.rb:22:in `call'
+activesupport (5.1.6) lib/active_support/cache/strategy/local_cache_middleware.rb:27:in `call'
+actionpack (5.1.6) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.1.6) lib/action_dispatch/middleware/static.rb:125:in `call'
+rack (2.0.4) lib/rack/sendfile.rb:111:in `call'
+railties (5.1.6) lib/rails/engine.rb:522:in `call'
+puma (3.7.0) lib/puma/configuration.rb:226:in `call'
+puma (3.7.0) lib/puma/server.rb:578:in `handle_request'
+puma (3.7.0) lib/puma/server.rb:415:in `process_client'
+puma (3.7.0) lib/puma/server.rb:275:in `block in run'
+puma (3.7.0) lib/puma/thread_pool.rb:120:in `block in spawn_thread'
+DEPRECATION WARNING: ActiveSupport.halt_callback_chains_on_return_false= is deprecated and will be removed in Rails 5.2. (called from <top (required)> at /Users/elishebawiggins/Projects/note-taking-app/config/initializers/new_framework_defaults.rb:21)
+DEPRECATION WARNING: ActiveSupport.halt_callback_chains_on_return_false= is deprecated and will be removed in Rails 5.2. (called from <top (required)> at /Users/elishebawiggins/Projects/note-taking-app/config/initializers/new_framework_defaults.rb:21)
+Started GET "/new" for 127.0.0.1 at 2018-04-02 18:08:04 -0400
+  
+ActionController::RoutingError (No route matches [GET] "/new"):
+  
+actionpack (5.1.6) lib/action_dispatch/middleware/debug_exceptions.rb:63:in `call'
+web-console (3.5.1) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.5.1) lib/web_console/middleware.rb:28:in `block in call'
+web-console (3.5.1) lib/web_console/middleware.rb:18:in `catch'
+web-console (3.5.1) lib/web_console/middleware.rb:18:in `call'
+actionpack (5.1.6) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.1.6) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.1.6) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (5.1.6) lib/active_support/tagged_logging.rb:69:in `block in tagged'
+activesupport (5.1.6) lib/active_support/tagged_logging.rb:26:in `tagged'
+activesupport (5.1.6) lib/active_support/tagged_logging.rb:69:in `tagged'
+railties (5.1.6) lib/rails/rack/logger.rb:24:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.1.6) lib/action_dispatch/middleware/remote_ip.rb:79:in `call'
+actionpack (5.1.6) lib/action_dispatch/middleware/request_id.rb:25:in `call'
+rack (2.0.4) lib/rack/method_override.rb:22:in `call'
+rack (2.0.4) lib/rack/runtime.rb:22:in `call'
+activesupport (5.1.6) lib/active_support/cache/strategy/local_cache_middleware.rb:27:in `call'
+actionpack (5.1.6) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.1.6) lib/action_dispatch/middleware/static.rb:125:in `call'
+rack (2.0.4) lib/rack/sendfile.rb:111:in `call'
+railties (5.1.6) lib/rails/engine.rb:522:in `call'
+puma (3.7.0) lib/puma/configuration.rb:226:in `call'
+puma (3.7.0) lib/puma/server.rb:578:in `handle_request'
+puma (3.7.0) lib/puma/server.rb:415:in `process_client'
+puma (3.7.0) lib/puma/server.rb:275:in `block in run'
+puma (3.7.0) lib/puma/thread_pool.rb:120:in `block in spawn_thread'
+DEPRECATION WARNING: ActiveSupport.halt_callback_chains_on_return_false= is deprecated and will be removed in Rails 5.2. (called from <top (required)> at /Users/elishebawiggins/Projects/note-taking-app/config/initializers/new_framework_defaults.rb:21)
+Started GET "/new" for 127.0.0.1 at 2018-04-02 18:08:26 -0400
+  [1m[35m (0.7ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  
+ActionController::RoutingError (No route matches [GET] "/new"):
+  
+actionpack (5.1.6) lib/action_dispatch/middleware/debug_exceptions.rb:63:in `call'
+web-console (3.5.1) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.5.1) lib/web_console/middleware.rb:28:in `block in call'
+web-console (3.5.1) lib/web_console/middleware.rb:18:in `catch'
+web-console (3.5.1) lib/web_console/middleware.rb:18:in `call'
+actionpack (5.1.6) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.1.6) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.1.6) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (5.1.6) lib/active_support/tagged_logging.rb:69:in `block in tagged'
+activesupport (5.1.6) lib/active_support/tagged_logging.rb:26:in `tagged'
+activesupport (5.1.6) lib/active_support/tagged_logging.rb:69:in `tagged'
+railties (5.1.6) lib/rails/rack/logger.rb:24:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.1.6) lib/action_dispatch/middleware/remote_ip.rb:79:in `call'
+actionpack (5.1.6) lib/action_dispatch/middleware/request_id.rb:25:in `call'
+rack (2.0.4) lib/rack/method_override.rb:22:in `call'
+rack (2.0.4) lib/rack/runtime.rb:22:in `call'
+activesupport (5.1.6) lib/active_support/cache/strategy/local_cache_middleware.rb:27:in `call'
+actionpack (5.1.6) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.1.6) lib/action_dispatch/middleware/static.rb:125:in `call'
+rack (2.0.4) lib/rack/sendfile.rb:111:in `call'
+railties (5.1.6) lib/rails/engine.rb:522:in `call'
+puma (3.7.0) lib/puma/configuration.rb:226:in `call'
+puma (3.7.0) lib/puma/server.rb:578:in `handle_request'
+puma (3.7.0) lib/puma/server.rb:415:in `process_client'
+puma (3.7.0) lib/puma/server.rb:275:in `block in run'
+puma (3.7.0) lib/puma/thread_pool.rb:120:in `block in spawn_thread'
+Started GET "/new" for 127.0.0.1 at 2018-04-02 18:08:52 -0400
+  
+ActionController::RoutingError (No route matches [GET] "/new"):
+  
+actionpack (5.1.6) lib/action_dispatch/middleware/debug_exceptions.rb:63:in `call'
+web-console (3.5.1) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.5.1) lib/web_console/middleware.rb:28:in `block in call'
+web-console (3.5.1) lib/web_console/middleware.rb:18:in `catch'
+web-console (3.5.1) lib/web_console/middleware.rb:18:in `call'
+actionpack (5.1.6) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.1.6) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.1.6) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (5.1.6) lib/active_support/tagged_logging.rb:69:in `block in tagged'
+activesupport (5.1.6) lib/active_support/tagged_logging.rb:26:in `tagged'
+activesupport (5.1.6) lib/active_support/tagged_logging.rb:69:in `tagged'
+railties (5.1.6) lib/rails/rack/logger.rb:24:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.1.6) lib/action_dispatch/middleware/remote_ip.rb:79:in `call'
+actionpack (5.1.6) lib/action_dispatch/middleware/request_id.rb:25:in `call'
+rack (2.0.4) lib/rack/method_override.rb:22:in `call'
+rack (2.0.4) lib/rack/runtime.rb:22:in `call'
+activesupport (5.1.6) lib/active_support/cache/strategy/local_cache_middleware.rb:27:in `call'
+actionpack (5.1.6) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.1.6) lib/action_dispatch/middleware/static.rb:125:in `call'
+rack (2.0.4) lib/rack/sendfile.rb:111:in `call'
+railties (5.1.6) lib/rails/engine.rb:522:in `call'
+puma (3.7.0) lib/puma/configuration.rb:226:in `call'
+puma (3.7.0) lib/puma/server.rb:578:in `handle_request'
+puma (3.7.0) lib/puma/server.rb:415:in `process_client'
+puma (3.7.0) lib/puma/server.rb:275:in `block in run'
+puma (3.7.0) lib/puma/thread_pool.rb:120:in `block in spawn_thread'
+Started GET "/" for 127.0.0.1 at 2018-04-02 18:09:17 -0400
+Processing by HelloPageController#hello as HTML
+  Rendering hello_page/hello.html.erb within layouts/application
+  Rendered hello_page/hello.html.erb within layouts/application (0.4ms)
+Completed 200 OK in 330ms (Views: 326.9ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-04-02 18:09:59 -0400
+Processing by HelloPageController#hello as HTML
+  Rendering hello_page/hello.html.erb within layouts/application
+  Rendered hello_page/hello.html.erb within layouts/application (0.6ms)
+Completed 200 OK in 52ms (Views: 48.7ms)
+
+
+Started GET "/new" for 127.0.0.1 at 2018-04-02 18:10:05 -0400
+  
+ActionController::RoutingError (No route matches [GET] "/new"):
+  
+actionpack (5.1.6) lib/action_dispatch/middleware/debug_exceptions.rb:63:in `call'
+web-console (3.5.1) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.5.1) lib/web_console/middleware.rb:28:in `block in call'
+web-console (3.5.1) lib/web_console/middleware.rb:18:in `catch'
+web-console (3.5.1) lib/web_console/middleware.rb:18:in `call'
+actionpack (5.1.6) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.1.6) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.1.6) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (5.1.6) lib/active_support/tagged_logging.rb:69:in `block in tagged'
+activesupport (5.1.6) lib/active_support/tagged_logging.rb:26:in `tagged'
+activesupport (5.1.6) lib/active_support/tagged_logging.rb:69:in `tagged'
+railties (5.1.6) lib/rails/rack/logger.rb:24:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.1.6) lib/action_dispatch/middleware/remote_ip.rb:79:in `call'
+actionpack (5.1.6) lib/action_dispatch/middleware/request_id.rb:25:in `call'
+rack (2.0.4) lib/rack/method_override.rb:22:in `call'
+rack (2.0.4) lib/rack/runtime.rb:22:in `call'
+activesupport (5.1.6) lib/active_support/cache/strategy/local_cache_middleware.rb:27:in `call'
+actionpack (5.1.6) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.1.6) lib/action_dispatch/middleware/static.rb:125:in `call'
+rack (2.0.4) lib/rack/sendfile.rb:111:in `call'
+railties (5.1.6) lib/rails/engine.rb:522:in `call'
+puma (3.7.0) lib/puma/configuration.rb:226:in `call'
+puma (3.7.0) lib/puma/server.rb:578:in `handle_request'
+puma (3.7.0) lib/puma/server.rb:415:in `process_client'
+puma (3.7.0) lib/puma/server.rb:275:in `block in run'
+puma (3.7.0) lib/puma/thread_pool.rb:120:in `block in spawn_thread'
+Started GET "/new" for 127.0.0.1 at 2018-04-02 18:15:28 -0400
+  
+ActionController::RoutingError (No route matches [GET] "/new"):
+  
+actionpack (5.1.6) lib/action_dispatch/middleware/debug_exceptions.rb:63:in `call'
+web-console (3.5.1) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.5.1) lib/web_console/middleware.rb:28:in `block in call'
+web-console (3.5.1) lib/web_console/middleware.rb:18:in `catch'
+web-console (3.5.1) lib/web_console/middleware.rb:18:in `call'
+actionpack (5.1.6) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.1.6) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.1.6) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (5.1.6) lib/active_support/tagged_logging.rb:69:in `block in tagged'
+activesupport (5.1.6) lib/active_support/tagged_logging.rb:26:in `tagged'
+activesupport (5.1.6) lib/active_support/tagged_logging.rb:69:in `tagged'
+railties (5.1.6) lib/rails/rack/logger.rb:24:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.1.6) lib/action_dispatch/middleware/remote_ip.rb:79:in `call'
+actionpack (5.1.6) lib/action_dispatch/middleware/request_id.rb:25:in `call'
+rack (2.0.4) lib/rack/method_override.rb:22:in `call'
+rack (2.0.4) lib/rack/runtime.rb:22:in `call'
+activesupport (5.1.6) lib/active_support/cache/strategy/local_cache_middleware.rb:27:in `call'
+actionpack (5.1.6) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.1.6) lib/action_dispatch/middleware/static.rb:125:in `call'
+rack (2.0.4) lib/rack/sendfile.rb:111:in `call'
+railties (5.1.6) lib/rails/engine.rb:522:in `call'
+puma (3.7.0) lib/puma/configuration.rb:226:in `call'
+puma (3.7.0) lib/puma/server.rb:578:in `handle_request'
+puma (3.7.0) lib/puma/server.rb:415:in `process_client'
+puma (3.7.0) lib/puma/server.rb:275:in `block in run'
+puma (3.7.0) lib/puma/thread_pool.rb:120:in `block in spawn_thread'
+Started GET "/" for 127.0.0.1 at 2018-04-02 18:15:31 -0400
+Processing by HelloPageController#hello as HTML
+  Rendering hello_page/hello.html.erb within layouts/application
+  Rendered hello_page/hello.html.erb within layouts/application (0.7ms)
+Completed 200 OK in 129ms (Views: 109.7ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-04-02 18:17:28 -0400
+Processing by HelloPageController#hello as HTML
+  Rendering hello_page/hello.html.erb within layouts/application
+  Rendered hello_page/hello.html.erb within layouts/application (9.0ms)
+Completed 500 Internal Server Error in 28ms
+
+
+  
+ActionView::Template::Error (No route matches {:action=>"show", :controller=>"notes"}, missing required keys: [:id]):
+    1: <div>
+    2:     <h1>Time to jot down some thoughts</h1>
+    3:     <h2>You just created a Ruby on Rails web application.</h2>
+    4:     <%= link_to 'All Notes',note_path %>
+    5:     <%= link_to 'New Note', new_note_path %>
+    6: </div>
+  
+app/views/hello_page/hello.html.erb:4:in `_app_views_hello_page_hello_html_erb___4133932133635267177_70340973186900'
+Started GET "/" for 127.0.0.1 at 2018-04-02 18:18:31 -0400
+Processing by HelloPageController#hello as HTML
+  Rendering hello_page/hello.html.erb within layouts/application
+  Rendered hello_page/hello.html.erb within layouts/application (4.7ms)
+Completed 200 OK in 109ms (Views: 98.0ms)
+
+
+Started GET "/notes/new" for 127.0.0.1 at 2018-04-02 18:18:34 -0400
+Processing by NotesController#new as HTML
+  Rendering notes/new.html.erb within layouts/application
+  Rendered notes/new.html.erb within layouts/application (4.5ms)
+Completed 500 Internal Server Error in 91ms (ActiveRecord: 12.0ms)
+
+
+  
+ActionView::Template::Error (First argument in form cannot contain nil or be empty):
+    1: <h1>New Note</h1>
+    2: <%form_for @note do |f| %>
+    3:   <%= f.text_field :title %>
+    4:   <%= f.text_area :body, size: "60x12" %>
+    5:   <%= f.submit "Create Note" %>
+  
+app/views/notes/new.html.erb:2:in `_app_views_notes_new_html_erb___1547088253154189886_70340946244700'
+Started GET "/notes/new" for 127.0.0.1 at 2018-04-02 18:20:01 -0400
+Processing by NotesController#new as HTML
+  Rendering notes/new.html.erb within layouts/application
+  Rendered notes/new.html.erb within layouts/application (4.2ms)
+Completed 200 OK in 101ms (Views: 82.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/notes/new" for 127.0.0.1 at 2018-04-02 18:25:14 -0400
+Processing by NotesController#new as HTML
+  Rendering notes/new.html.erb within layouts/application
+  Rendered notes/new.html.erb within layouts/application (8.6ms)
+Completed 500 Internal Server Error in 50ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionView::Template::Error (First argument in form cannot contain nil or be empty):
+    1: <h1>New Note</h1>
+    2: <%form_for @note do |f| %>
+    3:   <%= f.text_field :title %>
+    4:   <%= f.text_area :body, size: "60x12" %>
+    5:   <%= f.submit "Create Note" %>
+  
+app/views/notes/new.html.erb:2:in `_app_views_notes_new_html_erb___1547088253154189886_70340986722560'
+Started GET "/notes/new" for 127.0.0.1 at 2018-04-02 18:28:20 -0400
+Processing by NotesController#new as HTML
+  Rendering notes/new.html.erb within layouts/application
+  Rendered notes/new.html.erb within layouts/application (9.7ms)
+Completed 500 Internal Server Error in 40ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionView::Template::Error (First argument in form cannot contain nil or be empty):
+    1: <h1>New Note</h1>
+    2: <%form_for @note ,url: {controller: 'notes', action: 'create'} do |f| %>
+    3:   <%= f.text_field :title %>
+    4:   <%= f.text_area :body, size: "60x12" %>
+    5:   <%= f.submit "Create Note" %>
+  
+app/views/notes/new.html.erb:2:in `_app_views_notes_new_html_erb___1547088253154189886_70340986701040'
+Started GET "/notes/new" for 127.0.0.1 at 2018-04-02 18:30:56 -0400
+  
+SyntaxError (/Users/elishebawiggins/Projects/note-taking-app/app/controllers/notes_controller.rb:17: syntax error, unexpected end-of-input, expecting keyword_end):
+  
+app/controllers/notes_controller.rb:17: syntax error, unexpected end-of-input, expecting keyword_end
+Started GET "/notes/new" for 127.0.0.1 at 2018-04-02 18:31:17 -0400
+Processing by NotesController#new as HTML
+  Rendering notes/new.html.erb within layouts/application
+  Rendered notes/new.html.erb within layouts/application (11.0ms)
+Completed 200 OK in 92ms (Views: 59.3ms | ActiveRecord: 5.3ms)
+
+
+Started GET "/notes/new" for 127.0.0.1 at 2018-04-02 18:31:42 -0400
+Processing by NotesController#new as HTML
+  Rendering notes/new.html.erb within layouts/application
+  Rendered notes/new.html.erb within layouts/application (12.6ms)
+Completed 200 OK in 93ms (Views: 76.8ms | ActiveRecord: 0.0ms)
+
+
+DEPRECATION WARNING: ActiveSupport.halt_callback_chains_on_return_false= is deprecated and will be removed in Rails 5.2. (called from <top (required)> at /Users/elishebawiggins/Projects/note-taking-app/config/initializers/new_framework_defaults.rb:21)
+  [1m[35m (0.6ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+Processing by HelloPageController#hello as HTML
+  Rendering hello_page/hello.html.erb within layouts/application
+  Rendered hello_page/hello.html.erb within layouts/application (1.7ms)
+Completed 200 OK in 353ms (Views: 349.8ms | ActiveRecord: 0.0ms)
+
+
+  [1m[35m (0.1ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+Processing by HelloPageController#hello as HTML
+  Rendering hello_page/hello.html.erb within layouts/application
+  Rendered hello_page/hello.html.erb within layouts/application (0.3ms)
+Completed 200 OK in 34ms (Views: 31.6ms | ActiveRecord: 0.0ms)
+
+
+  [1m[35m (0.1ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+Processing by NotesController#index as HTML
+  Rendering notes/index.html.erb within layouts/application
+  Template rendering was prevented by rspec-rails. Use `render_views` to verify rendered view contents if necessary.
+  Rendered notes/index.html.erb within layouts/application (0.3ms)
+  Template rendering was prevented by rspec-rails. Use `render_views` to verify rendered view contents if necessary.
+Completed 200 OK in 16ms (Views: 10.3ms | ActiveRecord: 0.0ms)
+
+
+  [1m[35m (0.1ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+Processing by NotesController#new as HTML
+  Rendering notes/new.html.erb within layouts/application
+  Template rendering was prevented by rspec-rails. Use `render_views` to verify rendered view contents if necessary.
+  Rendered notes/new.html.erb within layouts/application (0.5ms)
+  Template rendering was prevented by rspec-rails. Use `render_views` to verify rendered view contents if necessary.
+Completed 200 OK in 22ms (Views: 9.7ms | ActiveRecord: 0.6ms)
+
+
+  [1m[35m (0.4ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.2ms)[0m  [1m[31mrollback transaction[0m
+DEPRECATION WARNING: ActiveSupport.halt_callback_chains_on_return_false= is deprecated and will be removed in Rails 5.2. (called from <top (required)> at /Users/elishebawiggins/Projects/note-taking-app/config/initializers/new_framework_defaults.rb:21)
+  [1m[35m (0.7ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.2ms)[0m  [1m[36mbegin transaction[0m
+Processing by HelloPageController#hello as HTML
+  Rendering hello_page/hello.html.erb within layouts/application
+  Rendered hello_page/hello.html.erb within layouts/application (1.6ms)
+Completed 200 OK in 318ms (Views: 315.9ms | ActiveRecord: 0.0ms)
+
+
+  [1m[35m (0.2ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+Processing by HelloPageController#hello as HTML
+  Rendering hello_page/hello.html.erb within layouts/application
+  Rendered hello_page/hello.html.erb within layouts/application (0.2ms)
+Completed 200 OK in 30ms (Views: 28.7ms | ActiveRecord: 0.0ms)
+
+
+  [1m[35m (0.1ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+Processing by NotesController#index as HTML
+  Rendering notes/index.html.erb within layouts/application
+  Template rendering was prevented by rspec-rails. Use `render_views` to verify rendered view contents if necessary.
+  Rendered notes/index.html.erb within layouts/application (0.5ms)
+  Template rendering was prevented by rspec-rails. Use `render_views` to verify rendered view contents if necessary.
+Completed 200 OK in 20ms (Views: 14.0ms | ActiveRecord: 0.0ms)
+
+
+  [1m[35m (0.1ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+Processing by NotesController#new as HTML
+  Rendering notes/new.html.erb within layouts/application
+  Template rendering was prevented by rspec-rails. Use `render_views` to verify rendered view contents if necessary.
+  Rendered notes/new.html.erb within layouts/application (0.3ms)
+  Template rendering was prevented by rspec-rails. Use `render_views` to verify rendered view contents if necessary.
+Completed 200 OK in 20ms (Views: 8.7ms | ActiveRecord: 0.8ms)
+
+
+  [1m[35m (0.1ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (2.2ms)[0m  [1m[32mINSERT INTO "notes" ("title", "body", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["title", "First Day Here"], ["body", "It was great!"], ["created_at", "2018-04-02 23:54:09.581163"], ["updated_at", "2018-04-02 23:54:09.581163"]]
+  [1m[35m (0.1ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT COUNT(*) FROM "notes"[0m
+  [1m[35m (0.4ms)[0m  [1m[31mrollback transaction[0m
+DEPRECATION WARNING: ActiveSupport.halt_callback_chains_on_return_false= is deprecated and will be removed in Rails 5.2. (called from <top (required)> at /Users/elishebawiggins/Projects/note-taking-app/config/initializers/new_framework_defaults.rb:21)
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+Processing by HelloPageController#hello as HTML
+  Rendering hello_page/hello.html.erb within layouts/application
+  Rendered hello_page/hello.html.erb within layouts/application (2.5ms)
+Completed 200 OK in 349ms (Views: 345.9ms | ActiveRecord: 0.0ms)
+
+
+  [1m[35m (0.1ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+Processing by HelloPageController#hello as HTML
+  Rendering hello_page/hello.html.erb within layouts/application
+  Rendered hello_page/hello.html.erb within layouts/application (0.3ms)
+Completed 200 OK in 38ms (Views: 35.3ms | ActiveRecord: 0.0ms)
+
+
+  [1m[35m (0.1ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+Processing by NotesController#index as HTML
+  Rendering notes/index.html.erb within layouts/application
+  Template rendering was prevented by rspec-rails. Use `render_views` to verify rendered view contents if necessary.
+  Rendered notes/index.html.erb within layouts/application (0.3ms)
+  Template rendering was prevented by rspec-rails. Use `render_views` to verify rendered view contents if necessary.
+Completed 200 OK in 24ms (Views: 16.1ms | ActiveRecord: 0.0ms)
+
+
+  [1m[35m (0.1ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+Processing by NotesController#new as HTML
+  Rendering notes/new.html.erb within layouts/application
+  Template rendering was prevented by rspec-rails. Use `render_views` to verify rendered view contents if necessary.
+  Rendered notes/new.html.erb within layouts/application (0.3ms)
+  Template rendering was prevented by rspec-rails. Use `render_views` to verify rendered view contents if necessary.
+Completed 200 OK in 24ms (Views: 9.7ms | ActiveRecord: 0.7ms)
+
+
+  [1m[35m (0.1ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+Started GET "/" for 127.0.0.1 at 2018-04-02 19:58:12 -0400
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by HelloPageController#hello as HTML
+  Rendering hello_page/hello.html.erb within layouts/application
+  Rendered hello_page/hello.html.erb within layouts/application (0.9ms)
+Completed 200 OK in 54ms (Views: 35.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/notes/new" for 127.0.0.1 at 2018-04-02 19:58:17 -0400
+Processing by NotesController#new as HTML
+  Rendering notes/new.html.erb within layouts/application
+  Rendered notes/new.html.erb within layouts/application (15.1ms)
+Completed 200 OK in 72ms (Views: 66.4ms | ActiveRecord: 0.0ms)
+
+
+  [1m[35m (0.2ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+Started GET "/" for 127.0.0.1 at 2018-04-02 19:58:17 -0400
+Processing by HelloPageController#hello as HTML
+  Rendering hello_page/hello.html.erb within layouts/application
+  Rendered hello_page/hello.html.erb within layouts/application (0.6ms)
+Completed 200 OK in 42ms (Views: 39.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/notes/new" for 127.0.0.1 at 2018-04-02 19:58:17 -0400
+Processing by NotesController#new as HTML
+  Rendering notes/new.html.erb within layouts/application
+  Rendered notes/new.html.erb within layouts/application (2.2ms)
+Completed 200 OK in 61ms (Views: 56.7ms | ActiveRecord: 0.0ms)
+
+
+  [1m[35m (0.1ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (1.8ms)[0m  [1m[32mINSERT INTO "notes" ("title", "body", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["title", "First Day Here"], ["body", "It was great!"], ["created_at", "2018-04-02 23:58:48.090072"], ["updated_at", "2018-04-02 23:58:48.090072"]]
+  [1m[35m (0.2ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT COUNT(*) FROM "notes"[0m
+  [1m[35m (0.4ms)[0m  [1m[31mrollback transaction[0m
+DEPRECATION WARNING: ActiveSupport.halt_callback_chains_on_return_false= is deprecated and will be removed in Rails 5.2. (called from <top (required)> at /Users/elishebawiggins/Projects/note-taking-app/config/initializers/new_framework_defaults.rb:21)
+  [1m[35m (0.7ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+Processing by HelloPageController#hello as HTML
+  Rendering hello_page/hello.html.erb within layouts/application
+  Rendered hello_page/hello.html.erb within layouts/application (1.7ms)
+Completed 200 OK in 294ms (Views: 291.2ms | ActiveRecord: 0.0ms)
+
+
+  [1m[35m (0.1ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+Processing by HelloPageController#hello as HTML
+  Rendering hello_page/hello.html.erb within layouts/application
+  Rendered hello_page/hello.html.erb within layouts/application (0.2ms)
+Completed 200 OK in 29ms (Views: 26.9ms | ActiveRecord: 0.0ms)
+
+
+  [1m[35m (0.1ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+Processing by NotesController#index as HTML
+  Rendering notes/index.html.erb within layouts/application
+  Template rendering was prevented by rspec-rails. Use `render_views` to verify rendered view contents if necessary.
+  Rendered notes/index.html.erb within layouts/application (0.3ms)
+  Template rendering was prevented by rspec-rails. Use `render_views` to verify rendered view contents if necessary.
+Completed 200 OK in 18ms (Views: 13.0ms | ActiveRecord: 0.0ms)
+
+
+  [1m[35m (0.1ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+Processing by NotesController#new as HTML
+  Rendering notes/new.html.erb within layouts/application
+  Template rendering was prevented by rspec-rails. Use `render_views` to verify rendered view contents if necessary.
+  Rendered notes/new.html.erb within layouts/application (0.3ms)
+  Template rendering was prevented by rspec-rails. Use `render_views` to verify rendered view contents if necessary.
+Completed 200 OK in 20ms (Views: 9.1ms | ActiveRecord: 0.6ms)
+
+
+  [1m[35m (0.1ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+Started GET "/" for 127.0.0.1 at 2018-04-02 19:59:20 -0400
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by HelloPageController#hello as HTML
+  Rendering hello_page/hello.html.erb within layouts/application
+  Rendered hello_page/hello.html.erb within layouts/application (1.3ms)
+Completed 200 OK in 69ms (Views: 53.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/notes/new" for 127.0.0.1 at 2018-04-02 19:59:26 -0400
+Processing by NotesController#new as HTML
+  Rendering notes/new.html.erb within layouts/application
+  Rendered notes/new.html.erb within layouts/application (16.4ms)
+Completed 200 OK in 81ms (Views: 73.8ms | ActiveRecord: 0.0ms)
+
+
+  [1m[35m (0.2ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+Started GET "/" for 127.0.0.1 at 2018-04-02 19:59:26 -0400
+Processing by HelloPageController#hello as HTML
+  Rendering hello_page/hello.html.erb within layouts/application
+  Rendered hello_page/hello.html.erb within layouts/application (1.4ms)
+Completed 200 OK in 42ms (Views: 40.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/notes/new" for 127.0.0.1 at 2018-04-02 19:59:26 -0400
+Processing by NotesController#new as HTML
+  Rendering notes/new.html.erb within layouts/application
+  Rendered notes/new.html.erb within layouts/application (1.9ms)
+Completed 200 OK in 59ms (Views: 55.1ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/notes" for 127.0.0.1 at 2018-04-02 19:59:34 -0400
+Processing by NotesController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"LW6l8ReCe1oXWvf3feg6UQaisuLMG3mZMjJnQ6ItFtWjsIbwn+AI6AcBuL6PbdG4x3nsBv720Vu4fL8IABlsjQ==", "note"=>{"title"=>"", "body"=>""}, "commit"=>"Create Note"}
+Completed 500 Internal Server Error in 1ms (ActiveRecord: 0.0ms)
+
+
+  
+ActiveModel::ForbiddenAttributesError (ActiveModel::ForbiddenAttributesError):
+  
+app/controllers/notes_controller.rb:11:in `create'
+  [1m[35m (0.7ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.5ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (6.1ms)[0m  [1m[32mINSERT INTO "notes" ("title", "body", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["title", "First Day Here"], ["body", "It was great!"], ["created_at", "2018-04-02 23:59:56.982836"], ["updated_at", "2018-04-02 23:59:56.982836"]]
+  [1m[35m (0.1ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT COUNT(*) FROM "notes"[0m
+  [1m[35m (2.1ms)[0m  [1m[31mrollback transaction[0m
+DEPRECATION WARNING: ActiveSupport.halt_callback_chains_on_return_false= is deprecated and will be removed in Rails 5.2. (called from <top (required)> at /Users/elishebawiggins/Projects/note-taking-app/config/initializers/new_framework_defaults.rb:21)
+  [1m[35m (0.7ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+Processing by HelloPageController#hello as HTML
+  Rendering hello_page/hello.html.erb within layouts/application
+  Rendered hello_page/hello.html.erb within layouts/application (2.3ms)
+Completed 200 OK in 281ms (Views: 279.0ms | ActiveRecord: 0.0ms)
+
+
+  [1m[35m (0.1ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+Processing by HelloPageController#hello as HTML
+  Rendering hello_page/hello.html.erb within layouts/application
+  Rendered hello_page/hello.html.erb within layouts/application (0.3ms)
+Completed 200 OK in 32ms (Views: 29.4ms | ActiveRecord: 0.0ms)
+
+
+  [1m[35m (0.1ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+Processing by NotesController#index as HTML
+  Rendering notes/index.html.erb within layouts/application
+  Template rendering was prevented by rspec-rails. Use `render_views` to verify rendered view contents if necessary.
+  Rendered notes/index.html.erb within layouts/application (0.3ms)
+  Template rendering was prevented by rspec-rails. Use `render_views` to verify rendered view contents if necessary.
+Completed 200 OK in 20ms (Views: 13.1ms | ActiveRecord: 0.0ms)
+
+
+  [1m[35m (0.1ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+Processing by NotesController#new as HTML
+  Rendering notes/new.html.erb within layouts/application
+  Template rendering was prevented by rspec-rails. Use `render_views` to verify rendered view contents if necessary.
+  Rendered notes/new.html.erb within layouts/application (0.3ms)
+  Template rendering was prevented by rspec-rails. Use `render_views` to verify rendered view contents if necessary.
+Completed 200 OK in 20ms (Views: 9.3ms | ActiveRecord: 0.5ms)
+
+
+  [1m[35m (0.1ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+Started GET "/" for 127.0.0.1 at 2018-04-02 20:00:26 -0400
+  [1m[35m (0.6ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by HelloPageController#hello as HTML
+  Rendering hello_page/hello.html.erb within layouts/application
+  Rendered hello_page/hello.html.erb within layouts/application (1.6ms)
+Completed 200 OK in 130ms (Views: 99.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/notes/new" for 127.0.0.1 at 2018-04-02 20:00:32 -0400
+Processing by NotesController#new as HTML
+  Rendering notes/new.html.erb within layouts/application
+  Rendered notes/new.html.erb within layouts/application (17.6ms)
+Completed 200 OK in 84ms (Views: 79.0ms | ActiveRecord: 0.0ms)
+
+
+  [1m[35m (0.1ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+Started GET "/" for 127.0.0.1 at 2018-04-02 20:00:32 -0400
+Processing by HelloPageController#hello as HTML
+  Rendering hello_page/hello.html.erb within layouts/application
+  Rendered hello_page/hello.html.erb within layouts/application (1.0ms)
+Completed 200 OK in 43ms (Views: 41.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/notes/new" for 127.0.0.1 at 2018-04-02 20:00:32 -0400
+Processing by NotesController#new as HTML
+  Rendering notes/new.html.erb within layouts/application
+  Rendered notes/new.html.erb within layouts/application (1.6ms)
+Completed 200 OK in 70ms (Views: 65.5ms | ActiveRecord: 0.0ms)
+
+
+  [1m[35m (0.1ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (1.4ms)[0m  [1m[32mINSERT INTO "notes" ("title", "body", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["title", "First Day Here"], ["body", "It was great!"], ["created_at", "2018-04-03 00:00:32.548943"], ["updated_at", "2018-04-03 00:00:32.548943"]]
+  [1m[35m (0.1ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT COUNT(*) FROM "notes"[0m
+  [1m[35m (0.4ms)[0m  [1m[31mrollback transaction[0m
+DEPRECATION WARNING: ActiveSupport.halt_callback_chains_on_return_false= is deprecated and will be removed in Rails 5.2. (called from <top (required)> at /Users/elishebawiggins/Projects/note-taking-app/config/initializers/new_framework_defaults.rb:21)
+  [1m[35m (0.7ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+Processing by HelloPageController#hello as HTML
+  Rendering hello_page/hello.html.erb within layouts/application
+  Rendered hello_page/hello.html.erb within layouts/application (1.9ms)
+Completed 200 OK in 367ms (Views: 364.7ms | ActiveRecord: 0.0ms)
+
+
+  [1m[35m (0.2ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+Processing by HelloPageController#hello as HTML
+  Rendering hello_page/hello.html.erb within layouts/application
+  Rendered hello_page/hello.html.erb within layouts/application (0.2ms)
+Completed 200 OK in 32ms (Views: 29.9ms | ActiveRecord: 0.0ms)
+
+
+  [1m[35m (0.3ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+Processing by NotesController#index as HTML
+  Rendering notes/index.html.erb within layouts/application
+  Template rendering was prevented by rspec-rails. Use `render_views` to verify rendered view contents if necessary.
+  Rendered notes/index.html.erb within layouts/application (0.3ms)
+  Template rendering was prevented by rspec-rails. Use `render_views` to verify rendered view contents if necessary.
+Completed 200 OK in 18ms (Views: 11.5ms | ActiveRecord: 0.0ms)
+
+
+  [1m[35m (0.1ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+Processing by NotesController#new as HTML
+  Rendering notes/new.html.erb within layouts/application
+  Template rendering was prevented by rspec-rails. Use `render_views` to verify rendered view contents if necessary.
+  Rendered notes/new.html.erb within layouts/application (0.4ms)
+  Template rendering was prevented by rspec-rails. Use `render_views` to verify rendered view contents if necessary.
+Completed 200 OK in 22ms (Views: 9.5ms | ActiveRecord: 0.7ms)
+
+
+  [1m[35m (0.1ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+Started GET "/" for 127.0.0.1 at 2018-04-02 20:00:51 -0400
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by HelloPageController#hello as HTML
+  Rendering hello_page/hello.html.erb within layouts/application
+  Rendered hello_page/hello.html.erb within layouts/application (1.2ms)
+Completed 200 OK in 66ms (Views: 48.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/notes/new" for 127.0.0.1 at 2018-04-02 20:00:56 -0400
+Processing by NotesController#new as HTML
+  Rendering notes/new.html.erb within layouts/application
+  Rendered notes/new.html.erb within layouts/application (12.5ms)
+Completed 200 OK in 54ms (Views: 49.6ms | ActiveRecord: 0.0ms)
+
+
+  [1m[35m (0.1ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+Started GET "/" for 127.0.0.1 at 2018-04-02 20:00:56 -0400
+Processing by HelloPageController#hello as HTML
+  Rendering hello_page/hello.html.erb within layouts/application
+  Rendered hello_page/hello.html.erb within layouts/application (0.6ms)
+Completed 200 OK in 30ms (Views: 28.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/notes/new" for 127.0.0.1 at 2018-04-02 20:00:56 -0400
+Processing by NotesController#new as HTML
+  Rendering notes/new.html.erb within layouts/application
+  Rendered notes/new.html.erb within layouts/application (1.6ms)
+Completed 200 OK in 44ms (Views: 41.8ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/notes" for 127.0.0.1 at 2018-04-02 20:00:57 -0400
+Processing by NotesController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"v4QBqWw9xbg+NM05BniW05SSuLwLIb1bACgo49d9YRNh+hs2cjKax8kSxpqgg3TMCYERCCt9RjL3L37foNyioQ==", "note"=>{"title"=>"", "body"=>""}, "commit"=>"Create Note"}
+Completed 500 Internal Server Error in 1ms (ActiveRecord: 0.0ms)
+
+
+  
+ActiveModel::ForbiddenAttributesError (ActiveModel::ForbiddenAttributesError):
+  
+app/controllers/notes_controller.rb:11:in `create'
+  [1m[35m (0.2ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.2ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (2.1ms)[0m  [1m[32mINSERT INTO "notes" ("title", "body", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["title", "First Day Here"], ["body", "It was great!"], ["created_at", "2018-04-03 00:01:28.011168"], ["updated_at", "2018-04-03 00:01:28.011168"]]
+  [1m[35m (0.1ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT COUNT(*) FROM "notes"[0m
+  [1m[35m (0.4ms)[0m  [1m[31mrollback transaction[0m
