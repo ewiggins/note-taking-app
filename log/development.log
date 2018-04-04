@@ -1794,3 +1794,61 @@ Completed 200 OK in 21ms (Views: 8.7ms | ActiveRecord: 0.5ms)
   [1m[35m (0.1ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
   [1m[36mNote Load (0.1ms)[0m  [1m[34mSELECT  "notes".* FROM "notes" ORDER BY "notes"."id" DESC LIMIT ?[0m  [["LIMIT", 1]]
   [1m[35m (0.4ms)[0m  [1m[31mrollback transaction[0m
+DEPRECATION WARNING: ActiveSupport.halt_callback_chains_on_return_false= is deprecated and will be removed in Rails 5.2. (called from <top (required)> at /Users/elishebawiggins/Projects/note-taking-app/config/initializers/new_framework_defaults.rb:21)
+DEPRECATION WARNING: ActiveSupport.halt_callback_chains_on_return_false= is deprecated and will be removed in Rails 5.2. (called from <top (required)> at /Users/elishebawiggins/Projects/note-taking-app/config/initializers/new_framework_defaults.rb:21)
+  [1m[36mNote Load (2.3ms)[0m  [1m[34mSELECT  "notes".* FROM "notes" LIMIT ?[0m  [["LIMIT", 11]]
+Started GET "/" for 127.0.0.1 at 2018-04-04 17:36:52 -0400
+  [1m[35m (1.0ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by HelloPageController#hello as HTML
+  Rendering hello_page/hello.html.erb within layouts/application
+  Rendered hello_page/hello.html.erb within layouts/application (2.2ms)
+Completed 200 OK in 428ms (Views: 409.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-04-04 17:40:51 -0400
+Processing by HelloPageController#hello as HTML
+  Rendering hello_page/hello.html.erb within layouts/application
+  Rendered hello_page/hello.html.erb within layouts/application (8.7ms)
+Completed 500 Internal Server Error in 102ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionView::Template::Error (Invalid CSS after "  height": expected ";", was ": 50%"):
+    4:     <title>RailsWebApp</title>
+    5:     <%= csrf_meta_tags %>
+    6: 
+    7:     <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+    8:     <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
+    9:   </head>
+   10: 
+  
+app/assets/stylesheets/hello_page.scss:38
+app/views/layouts/application.html.erb:7:in `_app_views_layouts_application_html_erb___1140850239741780535_70287343672380'
+Started GET "/" for 127.0.0.1 at 2018-04-04 17:41:00 -0400
+Processing by HelloPageController#hello as HTML
+  Rendering hello_page/hello.html.erb within layouts/application
+  Rendered hello_page/hello.html.erb within layouts/application (0.8ms)
+Completed 200 OK in 101ms (Views: 97.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-04-04 17:42:57 -0400
+Processing by HelloPageController#hello as HTML
+  Rendering hello_page/hello.html.erb within layouts/application
+  Rendered hello_page/hello.html.erb within layouts/application (4.0ms)
+Completed 200 OK in 117ms (Views: 107.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-04-04 17:44:12 -0400
+Processing by HelloPageController#hello as HTML
+  Rendering hello_page/hello.html.erb within layouts/application
+  Rendered hello_page/hello.html.erb within layouts/application (7.3ms)
+Completed 200 OK in 207ms (Views: 191.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-04-04 17:45:00 -0400
+Processing by HelloPageController#hello as HTML
+  Rendering hello_page/hello.html.erb within layouts/application
+  Rendered hello_page/hello.html.erb within layouts/application (1.0ms)
+Completed 200 OK in 81ms (Views: 78.1ms | ActiveRecord: 0.0ms)
+
+
