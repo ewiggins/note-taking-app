@@ -2782,3 +2782,348 @@ Completed 200 OK in 25ms (Views: 12.0ms | ActiveRecord: 1.2ms)
   [1m[35m (0.1ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
   [1m[36mNote Load (0.2ms)[0m  [1m[34mSELECT  "notes".* FROM "notes" WHERE "notes"."title" = ? LIMIT ?[0m  [["title", "First Day Here"], ["LIMIT", 1]]
   [1m[35m (0.4ms)[0m  [1m[31mrollback transaction[0m
+Started GET "/notes" for 127.0.0.1 at 2018-04-09 20:40:17 -0400
+Processing by NotesController#index as HTML
+  Rendering notes/index.html.erb within layouts/application
+  [1m[36mNote Load (0.5ms)[0m  [1m[34mSELECT "notes".* FROM "notes"[0m
+  Rendered notes/index.html.erb within layouts/application (31.9ms)
+Completed 200 OK in 157ms (Views: 143.3ms | ActiveRecord: 3.8ms)
+
+
+Started GET "/notes" for 127.0.0.1 at 2018-04-09 20:40:49 -0400
+Processing by NotesController#index as HTML
+  Rendering notes/index.html.erb within layouts/application
+  [1m[36mNote Load (0.5ms)[0m  [1m[34mSELECT "notes".* FROM "notes"[0m
+  Rendered notes/index.html.erb within layouts/application (5.3ms)
+Completed 200 OK in 86ms (Views: 78.9ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/notes" for 127.0.0.1 at 2018-04-09 20:40:59 -0400
+Processing by NotesController#index as HTML
+  Rendering notes/index.html.erb within layouts/application
+  [1m[36mNote Load (0.2ms)[0m  [1m[34mSELECT "notes".* FROM "notes"[0m
+  Rendered notes/index.html.erb within layouts/application (3.0ms)
+Completed 200 OK in 92ms (Views: 87.6ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/notes" for 127.0.0.1 at 2018-04-09 20:41:12 -0400
+Processing by NotesController#index as HTML
+  Rendering notes/index.html.erb within layouts/application
+  [1m[36mNote Load (0.3ms)[0m  [1m[34mSELECT "notes".* FROM "notes"[0m
+  Rendered notes/index.html.erb within layouts/application (2.1ms)
+Completed 200 OK in 94ms (Views: 90.7ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/notes/2/edit" for 127.0.0.1 at 2018-04-09 20:41:15 -0400
+Processing by NotesController#edit as HTML
+  Parameters: {"id"=>"2"}
+Completed 406 Not Acceptable in 176ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionController::UnknownFormat (NotesController#edit is missing a template for this request format and variant.
+
+request.formats: ["text/html"]
+request.variant: []
+
+NOTE! For XHR/Ajax or API requests, this action would normally respond with 204 No Content: an empty white screen. Since you're loading it in a web browser, we assume that you expected to actually render a template, not nothing, so we're showing an error to be extra-clear. If you expect 204 No Content, carry on. That's what you'll get from an XHR or API request. Give it a shot.):
+  
+actionpack (5.1.6) lib/action_controller/metal/implicit_render.rb:53:in `default_render'
+actionpack (5.1.6) lib/action_controller/metal/basic_implicit_render.rb:4:in `block in send_action'
+actionpack (5.1.6) lib/action_controller/metal/basic_implicit_render.rb:4:in `tap'
+actionpack (5.1.6) lib/action_controller/metal/basic_implicit_render.rb:4:in `send_action'
+actionpack (5.1.6) lib/abstract_controller/base.rb:186:in `process_action'
+actionpack (5.1.6) lib/action_controller/metal/rendering.rb:30:in `process_action'
+actionpack (5.1.6) lib/abstract_controller/callbacks.rb:20:in `block in process_action'
+activesupport (5.1.6) lib/active_support/callbacks.rb:131:in `run_callbacks'
+actionpack (5.1.6) lib/abstract_controller/callbacks.rb:19:in `process_action'
+actionpack (5.1.6) lib/action_controller/metal/rescue.rb:20:in `process_action'
+actionpack (5.1.6) lib/action_controller/metal/instrumentation.rb:32:in `block in process_action'
+activesupport (5.1.6) lib/active_support/notifications.rb:166:in `block in instrument'
+activesupport (5.1.6) lib/active_support/notifications/instrumenter.rb:21:in `instrument'
+activesupport (5.1.6) lib/active_support/notifications.rb:166:in `instrument'
+actionpack (5.1.6) lib/action_controller/metal/instrumentation.rb:30:in `process_action'
+actionpack (5.1.6) lib/action_controller/metal/params_wrapper.rb:252:in `process_action'
+activerecord (5.1.6) lib/active_record/railties/controller_runtime.rb:22:in `process_action'
+actionpack (5.1.6) lib/abstract_controller/base.rb:124:in `process'
+actionview (5.1.6) lib/action_view/rendering.rb:30:in `process'
+actionpack (5.1.6) lib/action_controller/metal.rb:189:in `dispatch'
+actionpack (5.1.6) lib/action_controller/metal.rb:253:in `dispatch'
+actionpack (5.1.6) lib/action_dispatch/routing/route_set.rb:49:in `dispatch'
+actionpack (5.1.6) lib/action_dispatch/routing/route_set.rb:31:in `serve'
+actionpack (5.1.6) lib/action_dispatch/journey/router.rb:50:in `block in serve'
+actionpack (5.1.6) lib/action_dispatch/journey/router.rb:33:in `each'
+actionpack (5.1.6) lib/action_dispatch/journey/router.rb:33:in `serve'
+actionpack (5.1.6) lib/action_dispatch/routing/route_set.rb:844:in `call'
+rack (2.0.4) lib/rack/etag.rb:25:in `call'
+rack (2.0.4) lib/rack/conditional_get.rb:25:in `call'
+rack (2.0.4) lib/rack/head.rb:12:in `call'
+rack (2.0.4) lib/rack/session/abstract/id.rb:232:in `context'
+rack (2.0.4) lib/rack/session/abstract/id.rb:226:in `call'
+actionpack (5.1.6) lib/action_dispatch/middleware/cookies.rb:613:in `call'
+activerecord (5.1.6) lib/active_record/migration.rb:556:in `call'
+actionpack (5.1.6) lib/action_dispatch/middleware/callbacks.rb:26:in `block in call'
+activesupport (5.1.6) lib/active_support/callbacks.rb:97:in `run_callbacks'
+actionpack (5.1.6) lib/action_dispatch/middleware/callbacks.rb:24:in `call'
+actionpack (5.1.6) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.1.6) lib/action_dispatch/middleware/debug_exceptions.rb:59:in `call'
+web-console (3.5.1) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.5.1) lib/web_console/middleware.rb:28:in `block in call'
+web-console (3.5.1) lib/web_console/middleware.rb:18:in `catch'
+web-console (3.5.1) lib/web_console/middleware.rb:18:in `call'
+actionpack (5.1.6) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.1.6) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.1.6) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (5.1.6) lib/active_support/tagged_logging.rb:69:in `block in tagged'
+activesupport (5.1.6) lib/active_support/tagged_logging.rb:26:in `tagged'
+activesupport (5.1.6) lib/active_support/tagged_logging.rb:69:in `tagged'
+railties (5.1.6) lib/rails/rack/logger.rb:24:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.1.6) lib/action_dispatch/middleware/remote_ip.rb:79:in `call'
+actionpack (5.1.6) lib/action_dispatch/middleware/request_id.rb:25:in `call'
+rack (2.0.4) lib/rack/method_override.rb:22:in `call'
+rack (2.0.4) lib/rack/runtime.rb:22:in `call'
+activesupport (5.1.6) lib/active_support/cache/strategy/local_cache_middleware.rb:27:in `call'
+actionpack (5.1.6) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.1.6) lib/action_dispatch/middleware/static.rb:125:in `call'
+rack (2.0.4) lib/rack/sendfile.rb:111:in `call'
+railties (5.1.6) lib/rails/engine.rb:522:in `call'
+puma (3.7.0) lib/puma/configuration.rb:226:in `call'
+puma (3.7.0) lib/puma/server.rb:578:in `handle_request'
+puma (3.7.0) lib/puma/server.rb:415:in `process_client'
+puma (3.7.0) lib/puma/server.rb:275:in `block in run'
+puma (3.7.0) lib/puma/thread_pool.rb:120:in `block in spawn_thread'
+Started GET "/notes/2/edit" for 127.0.0.1 at 2018-04-09 20:42:21 -0400
+Processing by NotesController#edit as HTML
+  Parameters: {"id"=>"2"}
+  Rendering notes/edit.html.erb within layouts/application
+  Rendered notes/edit.html.erb within layouts/application (2.9ms)
+Completed 200 OK in 116ms (Views: 97.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/notes/2/edit" for 127.0.0.1 at 2018-04-09 20:45:00 -0400
+Processing by NotesController#edit as HTML
+  Parameters: {"id"=>"2"}
+  Rendering notes/edit.html.erb within layouts/application
+  Rendered notes/edit.html.erb within layouts/application (11.1ms)
+Completed 500 Internal Server Error in 33ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionView::Template::Error (':notesform' is not an ActiveModel-compatible object. It must implement :to_partial_path.):
+    1: <h1>Edit Note </h1>
+    2: 
+    3: <%=render :notesform %>
+  
+app/views/notes/edit.html.erb:3:in `_app_views_notes_edit_html_erb__2516800977760418918_70261494124940'
+Started GET "/notes/2/edit" for 127.0.0.1 at 2018-04-09 20:45:41 -0400
+Processing by NotesController#edit as HTML
+  Parameters: {"id"=>"2"}
+  Rendering notes/edit.html.erb within layouts/application
+  Rendered notes/_notesform.erb (7.8ms)
+  Rendered notes/edit.html.erb within layouts/application (19.5ms)
+Completed 500 Internal Server Error in 48ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionView::Template::Error (First argument in form cannot contain nil or be empty):
+    1: <%=form_for @note ,url: {controller: 'notes', action: 'create'} do |f| %>
+    2:   <%= f.text_field :title %>
+    3:   <%= f.text_area :body, size: "60x12" %>
+    4:   <%= f.submit "Create Note" %>
+  
+app/views/notes/_notesform.erb:1:in `_app_views_notes__notesform_erb__4266326102855219549_70261493017180'
+app/views/notes/edit.html.erb:3:in `_app_views_notes_edit_html_erb__2516800977760418918_70261491197440'
+Started GET "/notes/2/edit" for 127.0.0.1 at 2018-04-09 20:46:15 -0400
+Processing by NotesController#edit as HTML
+  Parameters: {"id"=>"2"}
+  Rendering notes/edit.html.erb within layouts/application
+  Rendered notes/_notesform.erb (1.6ms)
+  Rendered notes/edit.html.erb within layouts/application (5.4ms)
+Completed 500 Internal Server Error in 18ms (ActiveRecord: 0.0ms)
+
+
+  
+SyntaxError (/Users/elishebawiggins/Projects/note-taking-app/app/views/notes/_notesform.erb:1: syntax error, unexpected '}', expecting =>
+...tes', action: 'create', 'edit'} do |f| @output_buffer.safe_a...
+...                              ^
+/Users/elishebawiggins/Projects/note-taking-app/app/views/notes/_notesform.erb:7: syntax error, unexpected keyword_ensure, expecting end-of-input
+          ensure
+          ^~~~~~):
+  
+app/views/notes/_notesform.erb:1: syntax error, unexpected '}', expecting =>
+app/views/notes/_notesform.erb:7: syntax error, unexpected keyword_ensure, expecting end-of-input
+app/views/notes/edit.html.erb:3:in `_app_views_notes_edit_html_erb__2516800977760418918_70261519894420'
+Started GET "/notes/2/edit" for 127.0.0.1 at 2018-04-09 20:48:16 -0400
+Processing by NotesController#edit as HTML
+  Parameters: {"id"=>"2"}
+  Rendering notes/edit.html.erb within layouts/application
+  Rendered notes/_notesform.erb (6.1ms)
+  Rendered notes/edit.html.erb within layouts/application (13.1ms)
+Completed 500 Internal Server Error in 34ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionView::Template::Error (First argument in form cannot contain nil or be empty):
+    1: <%=form_for @note do |f| %>
+    2:   <%= f.text_field :title %>
+    3:   <%= f.text_area :body, size: "60x12" %>
+    4:   <%= f.submit "Create Note" %>
+  
+app/views/notes/_notesform.erb:1:in `_app_views_notes__notesform_erb__4266326102855219549_70261520668380'
+app/views/notes/edit.html.erb:3:in `_app_views_notes_edit_html_erb__2516800977760418918_70261531882320'
+Started GET "/notes" for 127.0.0.1 at 2018-04-09 20:48:33 -0400
+Processing by NotesController#index as HTML
+  Rendering notes/index.html.erb within layouts/application
+  [1m[36mNote Load (1.3ms)[0m  [1m[34mSELECT "notes".* FROM "notes"[0m
+  Rendered notes/index.html.erb within layouts/application (8.9ms)
+Completed 200 OK in 89ms (Views: 81.5ms | ActiveRecord: 1.3ms)
+
+
+Started GET "/notes/2/edit" for 127.0.0.1 at 2018-04-09 20:48:36 -0400
+Processing by NotesController#edit as HTML
+  Parameters: {"id"=>"2"}
+  Rendering notes/edit.html.erb within layouts/application
+  Rendered notes/_notesform.erb (3.5ms)
+  Rendered notes/edit.html.erb within layouts/application (6.0ms)
+Completed 500 Internal Server Error in 15ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionView::Template::Error (First argument in form cannot contain nil or be empty):
+    1: <%=form_for @note do |f| %>
+    2:   <%= f.text_field :title %>
+    3:   <%= f.text_area :body, size: "60x12" %>
+    4:   <%= f.submit "Create Note" %>
+  
+app/views/notes/_notesform.erb:1:in `_app_views_notes__notesform_erb__4266326102855219549_70261532298220'
+app/views/notes/edit.html.erb:3:in `_app_views_notes_edit_html_erb__2516800977760418918_70261532329840'
+Started GET "/notes/2/edit" for 127.0.0.1 at 2018-04-09 20:48:49 -0400
+Processing by NotesController#edit as HTML
+  Parameters: {"id"=>"2"}
+  Rendering notes/edit.html.erb within layouts/application
+  Rendered notes/_notesform.erb (2.8ms)
+  Rendered notes/edit.html.erb within layouts/application (6.0ms)
+Completed 500 Internal Server Error in 15ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionView::Template::Error (First argument in form cannot contain nil or be empty):
+    1: <%=form_for @note ,url: {controller: 'notes', action: 'create'} do |f| %>
+    2:   <%= f.text_field :title %>
+    3:   <%= f.text_area :body, size: "60x12" %>
+    4:   <%= f.submit "Create Note" %>
+  
+app/views/notes/_notesform.erb:1:in `_app_views_notes__notesform_erb__4266326102855219549_70261533165320'
+app/views/notes/edit.html.erb:3:in `_app_views_notes_edit_html_erb__2516800977760418918_70261538409340'
+Started GET "/notes/2/edit" for 127.0.0.1 at 2018-04-10 19:36:46 -0400
+Processing by NotesController#edit as HTML
+  Parameters: {"id"=>"2"}
+  Rendering notes/edit.html.erb within layouts/application
+  Rendered notes/_notesform.erb (16.6ms)
+  Rendered notes/edit.html.erb within layouts/application (32.8ms)
+Completed 500 Internal Server Error in 80ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionView::Template::Error (First argument in form cannot contain nil or be empty):
+    1: <%=form_for @note ,url: {controller: 'notes', action: 'create'} do |f| %>
+    2:   <%= f.text_field :title %>
+    3:   <%= f.text_area :body, size: "60x12" %>
+    4:   <%= f.submit "Create Note" %>
+  
+app/views/notes/_notesform.erb:1:in `_app_views_notes__notesform_erb__4266326102855219549_70261497200840'
+app/views/notes/edit.html.erb:3:in `_app_views_notes_edit_html_erb__2516800977760418918_70261493134660'
+Started GET "/notes/2/edit" for 127.0.0.1 at 2018-04-10 19:37:11 -0400
+Processing by NotesController#edit as HTML
+  Parameters: {"id"=>"2"}
+  Rendering notes/edit.html.erb within layouts/application
+  [1m[36mNote Load (0.9ms)[0m  [1m[34mSELECT  "notes".* FROM "notes" LIMIT ?[0m  [["LIMIT", 11]]
+  Rendered notes/_notesform.erb (185.6ms)
+  Rendered notes/edit.html.erb within layouts/application (199.4ms)
+Completed 500 Internal Server Error in 287ms (ActiveRecord: 28.8ms)
+
+
+  
+ActionView::Template::Error (undefined method `to_key' for #<Note::ActiveRecord_Relation:0x00007fce11dc2c10>
+Did you mean?  to_set
+               to_ary):
+    1: <%=form_for @note ,url: {controller: 'notes', action: 'create'} do |f| %>
+    2:   <%= f.text_field :title %>
+    3:   <%= f.text_area :body, size: "60x12" %>
+    4:   <%= f.submit "Create Note" %>
+  
+app/views/notes/_notesform.erb:1:in `_app_views_notes__notesform_erb__4266326102855219549_70261519779020'
+app/views/notes/edit.html.erb:3:in `_app_views_notes_edit_html_erb__2516800977760418918_70261519813500'
+Started GET "/notes/2/edit" for 127.0.0.1 at 2018-04-10 19:37:49 -0400
+Processing by NotesController#edit as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mNote Load (0.7ms)[0m  [1m[34mSELECT  "notes".* FROM "notes" WHERE "notes"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  Rendering notes/edit.html.erb within layouts/application
+  Rendered notes/_notesform.erb (53.6ms)
+  Rendered notes/edit.html.erb within layouts/application (56.6ms)
+Completed 200 OK in 157ms (Views: 118.4ms | ActiveRecord: 2.3ms)
+
+
+Started PATCH "/notes" for 127.0.0.1 at 2018-04-10 19:39:06 -0400
+  
+ActionController::RoutingError (No route matches [PATCH] "/notes"):
+  
+actionpack (5.1.6) lib/action_dispatch/middleware/debug_exceptions.rb:63:in `call'
+web-console (3.5.1) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.5.1) lib/web_console/middleware.rb:28:in `block in call'
+web-console (3.5.1) lib/web_console/middleware.rb:18:in `catch'
+web-console (3.5.1) lib/web_console/middleware.rb:18:in `call'
+actionpack (5.1.6) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.1.6) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.1.6) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (5.1.6) lib/active_support/tagged_logging.rb:69:in `block in tagged'
+activesupport (5.1.6) lib/active_support/tagged_logging.rb:26:in `tagged'
+activesupport (5.1.6) lib/active_support/tagged_logging.rb:69:in `tagged'
+railties (5.1.6) lib/rails/rack/logger.rb:24:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.1.6) lib/action_dispatch/middleware/remote_ip.rb:79:in `call'
+actionpack (5.1.6) lib/action_dispatch/middleware/request_id.rb:25:in `call'
+rack (2.0.4) lib/rack/method_override.rb:22:in `call'
+rack (2.0.4) lib/rack/runtime.rb:22:in `call'
+activesupport (5.1.6) lib/active_support/cache/strategy/local_cache_middleware.rb:27:in `call'
+actionpack (5.1.6) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.1.6) lib/action_dispatch/middleware/static.rb:125:in `call'
+rack (2.0.4) lib/rack/sendfile.rb:111:in `call'
+railties (5.1.6) lib/rails/engine.rb:522:in `call'
+puma (3.7.0) lib/puma/configuration.rb:226:in `call'
+puma (3.7.0) lib/puma/server.rb:578:in `handle_request'
+puma (3.7.0) lib/puma/server.rb:415:in `process_client'
+puma (3.7.0) lib/puma/server.rb:275:in `block in run'
+puma (3.7.0) lib/puma/thread_pool.rb:120:in `block in spawn_thread'
+Started PATCH "/notes" for 127.0.0.1 at 2018-04-10 19:40:27 -0400
+  
+ActionController::RoutingError (No route matches [PATCH] "/notes"):
+  
+actionpack (5.1.6) lib/action_dispatch/middleware/debug_exceptions.rb:63:in `call'
+web-console (3.5.1) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.5.1) lib/web_console/middleware.rb:28:in `block in call'
+web-console (3.5.1) lib/web_console/middleware.rb:18:in `catch'
+web-console (3.5.1) lib/web_console/middleware.rb:18:in `call'
+actionpack (5.1.6) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.1.6) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.1.6) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (5.1.6) lib/active_support/tagged_logging.rb:69:in `block in tagged'
+activesupport (5.1.6) lib/active_support/tagged_logging.rb:26:in `tagged'
+activesupport (5.1.6) lib/active_support/tagged_logging.rb:69:in `tagged'
+railties (5.1.6) lib/rails/rack/logger.rb:24:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.1.6) lib/action_dispatch/middleware/remote_ip.rb:79:in `call'
+actionpack (5.1.6) lib/action_dispatch/middleware/request_id.rb:25:in `call'
+rack (2.0.4) lib/rack/method_override.rb:22:in `call'
+rack (2.0.4) lib/rack/runtime.rb:22:in `call'
+activesupport (5.1.6) lib/active_support/cache/strategy/local_cache_middleware.rb:27:in `call'
+actionpack (5.1.6) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.1.6) lib/action_dispatch/middleware/static.rb:125:in `call'
+rack (2.0.4) lib/rack/sendfile.rb:111:in `call'
+railties (5.1.6) lib/rails/engine.rb:522:in `call'
+puma (3.7.0) lib/puma/configuration.rb:226:in `call'
+puma (3.7.0) lib/puma/server.rb:578:in `handle_request'
+puma (3.7.0) lib/puma/server.rb:415:in `process_client'
+puma (3.7.0) lib/puma/server.rb:275:in `block in run'
+puma (3.7.0) lib/puma/thread_pool.rb:120:in `block in spawn_thread'
