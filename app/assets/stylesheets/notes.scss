@@ -31,6 +31,14 @@ html,body {
     transition: all 0.2s;
 }
 
+ul {
+  text-align: center;
+  list-style-type: none;
+}
+
+li {
+  padding: 5px;
+}
 .notes {
-  padding-top: 20%
+  padding-top: 10px
 }
