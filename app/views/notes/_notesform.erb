@@ -1,5 +1,7 @@
 <%=form_for @note ,url: {controller: 'notes', action: 'create'} do |f| %>
-  <%= f.text_field :title %>
-  <%= f.text_area :body, size: "60x12" %>
+  <strong><%= f.label "Title" , class: "header"%></strong>
+  <%= f.text_field :title, class:"text-field" %>
+  <strong> <%= f.label "Body" , class: "header"%></strong>
+  <%= f.text_area :body, class: "text-field", size: "60x12" %>
   <%= f.submit "Create Note" %>
 <% end %>

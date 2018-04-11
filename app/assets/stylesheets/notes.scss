@@ -2,6 +2,7 @@
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
 
+/*header */
 html,body {
     background-color: #E0DCCA
 }
@@ -31,6 +32,8 @@ html,body {
     transition: all 0.2s;
 }
 
+/*body*/
+
 ul {
   text-align: center;
   list-style-type: none;
@@ -40,6 +43,31 @@ ul {
 li {
   padding: 5px;
 }
+
+.text-field {
+  display: inline-block;
+  width: 30%;
+  padding: 10px 10px;
+  margin: 10px 10px;
+  box-sizing: border-box;
+}
+.whitewash {
+  display: inline-block;
+  background-color: #FFFFFF;
+  padding: 8px;
+  margin: 0 5px 5px 0;
+  border-radius: 5px
+
+}
 .notes {
   padding-top: 10px
+}
+
+.box  {
+    margin: 5px;
+    width: 214px;
+}
+
+.box img {
+    width: 100%;
 }
