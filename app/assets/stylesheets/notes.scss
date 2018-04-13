@@ -4,19 +4,19 @@
 
 /*header */
 html,body {
-    background-color: #E0DCCA
+    background-color: #E0DCCA;
 }
 
 #note_title {
    width: 30%;
    height: 40%
-	}
+}
 
 
 .title {
   text-align: center;
   font-family: "Helvetica Neue", Arial, sans-serif;
-  color: #1F1D66;
+  color: #1F1D66
 }
 
 .newbutton {
@@ -31,7 +31,7 @@ html,body {
     color:#FFFFFF;
     background-color:#4eb5f1;
     text-align:center;
-    transition: all 0.2s;
+    transition: all 0.2s
 }
 
 /*body*/
@@ -39,7 +39,7 @@ html,body {
 ul {
   text-align: center;
   list-style-type: none;
-  display: block;
+  display: block
 }
 
 li {
@@ -54,6 +54,7 @@ li {
   border-radius: 5px
 
 }
+
 .notes {
   padding-top: 10px
 }

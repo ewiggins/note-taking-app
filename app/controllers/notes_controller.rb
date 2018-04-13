@@ -29,7 +29,7 @@ class NotesController < ApplicationController
 
     respond_to do |format|
       if @note.save
-        format.html { redirect_to @note, notice: 'Note Created Sucessfully.' }
+        format.html { redirect_to :index , notice: 'Note Created Sucessfully.' }
         format.json { render :index, status: :created, location: @note}
       else
         format.html { render :new }

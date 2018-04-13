@@ -1,3 +1,6 @@
 tmp/
 log/
 pids/
+spec/examples.txt
+log/development.log
+db/development.sqlite3

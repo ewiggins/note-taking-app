@@ -3702,3 +3702,53 @@ Completed 200 OK in 20ms (Views: 9.0ms | ActiveRecord: 0.7ms)
   [1m[35m (0.1ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
   [1m[36mNote Load (0.1ms)[0m  [1m[34mSELECT  "notes".* FROM "notes" WHERE "notes"."title" = ? LIMIT ?[0m  [["title", "First Day Here"], ["LIMIT", 1]]
   [1m[35m (0.4ms)[0m  [1m[31mrollback transaction[0m
+Started POST "/notes" for 127.0.0.1 at 2018-04-12 22:15:41 -0400
+Processing by NotesController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"Nc/LtlmZYSGYHkafuN4z6OTh2dRJDt/2I+JmnKAda//aqOOxYwlV/JMD4e90BNrIPVnaEk98T2h6SJbovf++pw==", "note"=>{"title"=>"Heya", "body"=>"Helleo=sdfddfdsfdfdf"}, "commit"=>"Create Note"}
+  [1m[35m (7.5ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (6.5ms)[0m  [1m[32mINSERT INTO "notes" ("title", "body", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["title", "Heya"], ["body", "Helleo=sdfddfdsfdfdf"], ["created_at", "2018-04-13 02:15:41.478545"], ["updated_at", "2018-04-13 02:15:41.478545"]]
+  [1m[35m (1.2ms)[0m  [1m[36mcommit transaction[0m
+Redirected to http://localhost:3000/notes/6
+Completed 302 Found in 65ms (ActiveRecord: 15.3ms)
+
+
+Started GET "/notes/6" for 127.0.0.1 at 2018-04-12 22:15:41 -0400
+Processing by NotesController#show as HTML
+  Parameters: {"id"=>"6"}
+  Rendering notes/show.html.erb within layouts/application
+  Rendered notes/show.html.erb within layouts/application (6.2ms)
+Completed 200 OK in 130ms (Views: 123.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-04-12 22:15:54 -0400
+Processing by NotesController#index as HTML
+  Rendering notes/index.html.erb within layouts/application
+  [1m[36mNote Load (7.2ms)[0m  [1m[34mSELECT "notes".* FROM "notes"[0m
+  Rendered notes/index.html.erb within layouts/application (29.5ms)
+Completed 200 OK in 300ms (Views: 275.0ms | ActiveRecord: 7.2ms)
+
+
+Started GET "/notes/new" for 127.0.0.1 at 2018-04-12 22:16:15 -0400
+Processing by NotesController#new as HTML
+  Rendering notes/new.html.erb within layouts/application
+  Rendered notes/_notesform.erb (19.4ms)
+  Rendered notes/new.html.erb within layouts/application (57.1ms)
+Completed 200 OK in 567ms (Views: 247.1ms | ActiveRecord: 88.3ms)
+
+
+Started POST "/notes" for 127.0.0.1 at 2018-04-12 22:16:27 -0400
+Processing by NotesController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"nbbMuoyE6L2GyGau8QmuyqT0vGdxHuZwF94djrliaaZy0eS9thTcYI3Vwd4900fqfUy/oXdsdu5OdO36pIC8/g==", "note"=>{"title"=>"Purpose", "body"=>"Halsey"}, "commit"=>"Create Note"}
+  [1m[35m (1.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (6.3ms)[0m  [1m[32mINSERT INTO "notes" ("title", "body", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["title", "Purpose"], ["body", "Halsey"], ["created_at", "2018-04-13 02:16:27.993891"], ["updated_at", "2018-04-13 02:16:27.993891"]]
+  [1m[35m (4.4ms)[0m  [1m[36mcommit transaction[0m
+Redirected to 
+Completed 500 Internal Server Error in 811ms (ActiveRecord: 11.7ms)
+
+
+  
+NoMethodError (undefined method `index_url' for #<NotesController:0x00007f8f622ac350>
+Did you mean?  index):
+  
+app/controllers/notes_controller.rb:32:in `block (2 levels) in create'
+app/controllers/notes_controller.rb:30:in `create'
