@@ -4,13 +4,13 @@
 </div>
 <div class="notes col-md-offset-2 col-md-8">
   <ul>
-  <% @note.each do |note| %>
-    <li><strong>Title:</strong></li>
-    <li><%= note.title %></li>
-    <li><strong>Body:</strong></li>
-    <li><%= note.body %></li>
-    <li><%= link_to 'Edit', edit_note_path(note) %></li>
-    <li><%= link_to 'Delete', note_path(note), method: :delete, data: { confirm: 'Are you sure?' } %></li>
-  <% end %>
- </ul>
+    <% @note.each do |note| %>
+      <li><strong>Title:</strong></li>
+      <li><%= note.title %></li>
+      <li><strong>Body:</strong></li>
+      <li><%= note.body %></li>
+      <li><%= link_to 'Edit', edit_note_path(note) %></li>
+      <li><%= link_to 'Delete', note_path(note), method: :delete, data: { confirm: 'Are you sure?' } %></li>
+    <% end %>
+  </ul>
 </div>

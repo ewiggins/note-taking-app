@@ -7,9 +7,11 @@ html,body {
     background-color: #E0DCCA
 }
 
-.header {
-    text-align: center;
-}
+#note_title {
+   width: 30%;
+   height: 40%
+	}
+
 
 .title {
   text-align: center;
@@ -44,13 +46,6 @@ li {
   padding: 5px;
 }
 
-.text-field {
-  display: inline-block;
-  width: 30%;
-  padding: 10px 10px;
-  margin: 10px 10px;
-  box-sizing: border-box;
-}
 .whitewash {
   display: inline-block;
   background-color: #FFFFFF;

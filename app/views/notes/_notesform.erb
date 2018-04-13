@@ -1,7 +1,12 @@
-<%=form_for @note ,url: {controller: 'notes', action: 'create'} do |f| %>
-  <strong><%= f.label "Title" , class: "header"%></strong>
-  <%= f.text_field :title, class:"text-field" %>
-  <strong> <%= f.label "Body" , class: "header"%></strong>
-  <%= f.text_area :body, class: "text-field", size: "60x12" %>
-  <%= f.submit "Create Note" %>
-<% end %>
+
+<div>
+  <ul>
+  <%=form_for @note ,url: {controller: 'notes', action: 'create'} do |f| %>
+    <li><strong><%= f.label "Title" , class: "title", size:"30x6"%></strong></li>
+    <li><%= f.text_field :title, class:"body" %></li>
+    <li><strong> <%= f.label "Body" , class: "title"%></strong></li>
+    <li><%= f.text_area :body,class: "body", size: "60x12" %></li>
+    <li><%= f.submit "Create Note" %></li>
+  <% end %>
+  </ul>
+</div>
