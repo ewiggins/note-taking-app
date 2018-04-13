@@ -22,5 +22,11 @@ RSpec.describe NotesController do
       note.destroy
       expect(Note.find_by(title: "First Day Here")).to eq(nil)
     end
+
+    it "edits a note" do
+      note = Note.create(title: "First Day Here", body: "It was great!")
+      note.update_attributes(:title => "Second Day Here")
+      expect(Note.find_by(title: "First Day Here")).to eq(nil)
+    end
   end
 end

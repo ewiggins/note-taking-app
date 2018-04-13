@@ -11,10 +11,11 @@ class NotesController < ApplicationController
     @note = Note.find(params[:id])
     respond_to do |format|
       if @note.save
-        format.html { redirect_to @note, notice: 'Note Created Sucessfully.' }
-        format.json { render :index, status: :created, location: @note}
+        format.html { redirect_to @note, notice: 'Note
+          updated Sucessfully.' }
+        format.json { render :index, status: :updated, location: @note}
       else
-        format.html { render :new }
+        format.html { render :edit }
         format.json { render json: @note.errors, status: :unprocessable_entity }
       end
     end
