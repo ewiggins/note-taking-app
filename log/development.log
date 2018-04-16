@@ -3752,3 +3752,19 @@ Did you mean?  index):
   
 app/controllers/notes_controller.rb:32:in `block (2 levels) in create'
 app/controllers/notes_controller.rb:30:in `create'
+Started POST "/notes" for 127.0.0.1 at 2018-04-14 08:01:04 -0400
+Processing by NotesController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"nbbMuoyE6L2GyGau8QmuyqT0vGdxHuZwF94djrliaaZy0eS9thTcYI3Vwd4900fqfUy/oXdsdu5OdO36pIC8/g==", "note"=>{"title"=>"Purpose", "body"=>"Halsey"}, "commit"=>"Create Note"}
+  [1m[35m (25.6ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (22.5ms)[0m  [1m[32mINSERT INTO "notes" ("title", "body", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["title", "Purpose"], ["body", "Halsey"], ["created_at", "2018-04-14 12:01:05.335390"], ["updated_at", "2018-04-14 12:01:05.335390"]]
+  [1m[35m (1.3ms)[0m  [1m[36mcommit transaction[0m
+Redirected to 
+Completed 500 Internal Server Error in 2190ms (ActiveRecord: 49.4ms)
+
+
+  
+NoMethodError (undefined method `index_url' for #<NotesController:0x00007f8f5ce89098>
+Did you mean?  index):
+  
+app/controllers/notes_controller.rb:32:in `block (2 levels) in create'
+app/controllers/notes_controller.rb:30:in `create'
